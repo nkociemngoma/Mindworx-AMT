@@ -1,0 +1,64 @@
+.main-one{
+    background-color: rgb(233, 233, 233);
+}
+
+.navbar{
+    background-color: #f4f4f4;
+    display: block;
+    overflow: hidden;
+    padding-top: 20px;
+    
+}
+
+.topnav {
+    background-color: #f4f4f4;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    width: fit-content;
+    float: right;
+    margin-right: 8.5%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2c2c2c;
+    text-align: center;
+    padding: 18px 20px;
+    padding-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    
+  }
+  
+  /* Change the color of links on hover */
+  
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: #f28f3b;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  .logo{
+      width:fit-content;
+      float: left;
+      height:fit-content;
+      padding-top: 14px;
+      padding-left: 14px;
+      margin-left: 8.5%;
+  }
+
+  .animation {
+    max-width: 80%; 
+    margin-left: 8.5%;
+  }
+
+  
+
+  
