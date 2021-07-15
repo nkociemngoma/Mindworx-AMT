@@ -1,0 +1,86 @@
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:lightgrey ;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: darkgrey;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f28f3b;
+  }
+  
+  .main {
+    /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  label {
+    font-size: 16px;
+    font-style: italic;
+  }
+  input {
+    margin-top: 6px;
+    min-width: 36em;
+    min-height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-style: italic;
+    background-color: #f3f3f3;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    transition: all 250ms ease-in-out;
+  }
+  .container2{
+      display:flex ;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10%;
+  }
+
+  .input.message{
+      height: 73px;
+  }
+
+  .btnSubmit{
+    width: 100%;
+    font-size: 16px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    border: 0;
+    background-color: #f37521;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .active{
+      color:#f37521;
+  }
