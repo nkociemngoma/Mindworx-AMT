@@ -15,13 +15,13 @@ const MainPage = () => {
                     </Link>
                 </div>
                 <div class="topnav" id="myTopnav">
-                    <Link to ="/" class="active" id="a">Home</Link>
-                    <Link to ="/Users" id="a">Users</Link>
+                    
                     <Link to ="/login"id="a">Login</Link>
                     <Link to ="/register" id="a">Register</Link>
                     <a href ="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
+                    
                     </div>
                     
                 </div>
@@ -30,6 +30,8 @@ const MainPage = () => {
                 </div>
 
         </div>
+
+        
         
     );
 }

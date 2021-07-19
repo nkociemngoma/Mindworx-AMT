@@ -1,31 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import  logo  from "./m-logo.png";
+import  loginImg  from "./m-logo.png";
 
-const Register = () => {
+class Register extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+  
+    render() {
     return (
-        <div>
-            <div className="navbar">
-                <div className="logo">
-                <Link to ="/" >
-                        <img src = {logo} width="300" height="80" />
-                    </Link>
-                </div>
-                <div class="topnav" id="myTopnav">
-                    <Link to ="/" id="a">Home</Link>
-                    <Link to ="/Users" id="a">Users</Link>
-                    <Link to ="/login"id="a">Login</Link>
-                    <Link to ="/register" class="active" id="a">Register</Link>
-                    <a href ="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    </div>
-                    
-                </div>
-            <h2>Welcome to the register page</h2>
+        <div className="super-containter">
+        <div className="login">
+        <div className="container">
+        <div className="base-container" ref={this.props.containerRef}>
+        <div className="content">
+          <div className="image">
+            <Link to ="/" >
+                <img src = {loginImg} width="300" height="80" />
+            </Link>
+          </div>
+          <div className="form">
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input type="text" name="username" placeholder="username" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" placeholder="email" />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Password</label>
+              <input type="password" name="password" placeholder="password" />
+            </div>
+          </div>
         </div>
+        <div className="footer">
+        <Link to ="/editProfile" id="a">
+          <button type="button" className="btn">
+            Register
+          </button>
+          </Link>
+          <br />
+          <Link to ="/login"id="a">
+          <button type="button" className="btn"> 
+               I have an account 
+          </button>
+          </Link>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
         
     );
+    }
 }
 
 export default Register;
