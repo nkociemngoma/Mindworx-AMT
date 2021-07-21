@@ -1,37 +1,53 @@
+import React, { useState } from "react";
+import LoginForm from "./Components/LoginForm";
 
-import './App.css';
-import './pages/styles.css';
+function App() {
+  const adminUser = {
+    email: "nathanaelcammay@gmail.com",
+    password: "Admin123",
+  };
 
-import { BrowserRouter as Router, 
-  Route, 
-  Switch, 
-  Link, 
-  Redirect } from "react-router-dom";
+  const [user, setUser] = useState({ name: "", email: "" });
+  const [error, setError] = useState("");
 
-  //Pages
-  import MainPage from "./pages";
-  import NotFoundPage from './pages/NotFoundPage';
-  import UsersPage from './pages/Users';
-  import Login from './pages/login';
-  import Register from './pages/register';
-  import Homepage from './pages/home';
-import { Component } from 'react';
+  const Login = (details) => {
+    console.log(details);
 
-class App extends Component {
-  render () {
-    return ( <Router>
-      <Switch>
-        <Route exact path ="/" component = {MainPage} />
-        <Route exact path = "/NotFoundPage" component = {NotFoundPage}/>
-        <Route exact path = "/Users" component = {UsersPage}/>
-        <Route exact path = "/login" component = {Login}/>
-        <Route exact path = "/register" component = {Register}/>
-        <Route exact path = "/Home" component = {Homepage}/>
-        <Redirect to="/NotFoundPage"/>
-      </Switch>
-    </Router>
-    );
-  }
+    if (
+      details.email == adminUser.email &&
+      details.password == adminUser.password
+    ) {
+      console.log("Logged in");
+      setUser({
+        name: details.name,
+        email: details.email,
+      });
+    } else {
+      console.log("Details do not match!");
+      setError("Details do not match!");
+    }
+  };
+
+  const Logout = () => {
+    setUser({ name: "", email: "" });
+  };
+
+  return (
+    <div className="App">
+      {user.email != "" ? (
+        <div className="welcome">
+          <h2>
+            Welcome, <span>{user.name}</span>
+          </h2>
+          <button className="btn2" onClick={Logout}>
+            Logout
+          </button>
+        </div>
+      ) : (
+        <LoginForm Login={Login} error={error} />
+      )}
+    </div>
+  );
 }
 
 export default App;
