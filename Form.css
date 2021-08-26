@@ -1,6 +1,7 @@
-body {
+.body{
     margin: 0;
     padding-top: 40px;
+    color: #2e323c;
     
     position: relative;
     height: 100%;
@@ -25,7 +26,7 @@ body {
 }
 .account-settings .user-profile h6.user-email {
     margin: 0;
-    font-size: 2rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: #9fa8b9;
 }
@@ -38,61 +39,32 @@ body {
     color: #007ae1;
 }
 .account-settings .about p {
-    font-size: 2rem;
+    font-size: 0.825rem;
 }
 .form-control {
     border: 1px solid #cfd1d8;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
-    font-size: 1.3rem;
+    font-size: .825rem;
     background: #ffffff;
     color: #2e323c;
 }
 
-.row-gutters {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-.row-gutters2 {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    
-   
-}
-
-.row-gutters3 {
-    display: flex;
-    height: 10%;
-   
-    
-}
-
-.form-group1{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-}
-
-.form-group2{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    
-}
-
-.text-right{
-    width: 20%;
-    height: 10%;
-}
-
-.button{
-    height: 10px;
-    width: 20px;
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .card {
@@ -103,3 +75,116 @@ body {
     border: 0;
     margin-bottom: 1rem;
 }
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px){
+    .col-md-6 {
+    
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+@media (min-width: 768px){
+    .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid;
+    border-color: lightgray;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #f28f3b;
+    border-color: #f28f3b;
+}
+
+h6 {
+    display: block;
+    font-size: 1.67em;
+    margin-block-start: 1.33em;
+    margin-block-end: 0.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+
