@@ -1,0 +1,23 @@
+[
+    
+    {"id":"#1715", "user":"Cleo Phillips",  "description":"Data Top-Up", "date":"22 Jul 2021", "status":"In progress"},
+    {"id":"#1714", "user":"Zu Siswana",  "description":"Admin Rights", "date":"21 Jul 2021", "status":"Approved"},
+    {"id":"#1713", "user":"Yvonne Tau",  "description":"Installation Assistance", "date":"21 Jul 2021", "status":"Pending"},
+    {"id":"#1712", "user":"Philly Duma",  "description":"Admin Rights", "date":"21 Jul 2021", "status":"Approved"},
+    {"id":"#1711", "user":"Keneuoe Mokoatle",  "description":"Data Top-Up", "date":"20 Jul 2021", "status": "Rejected"},
+    {"id":"#1710", "user":"Sizwe Dhlomo",  "description":"Installation Assistance", "date":"20 Jul 2021", "status":"In Progress"},
+    {"id":"#1709", "user":"Sizwe Mbeki",  "description":"Data Top-Up", "date":"20 Jul 2021", "status":"In Progress"},
+    {"id":"#1708", "user":"Sihle Mavimbe",  "description":"Data Top-Up", "date":"20 Jul 2021", "status":"In progress"},
+    {"id":"#1707", "user":"Tshepo Mokoena",  "description":"Installation Assistance", "date":"19 Jul 2021", "status":"Pending"},
+    {"id":"#1706", "user":"Hadessa Fynn",  "description":"Data Top-Up", "date":"19 Jul 2021", "status":"Rejected"},
+    {"id":"#1705", "user":"Jared Jacobs",  "description":"Admin Rights", "date":"18 Jul 2021", "status":"Approved"},
+    {"id":"#1704", "user":"Emmanuel Dube",  "description":"Installation Assistance", "date":"18 Jul 2021", "status":"in progress"},
+    {"id":"#1703", "user":"Thato Ndlovu",  "description":"Data Top-Up", "date":"18 Jul 2021", "status":"in progress"},
+    {"id":"#1702", "user":"Lesedi Tshaane",  "description":"Admin Rights", "date":"17 Jul 2021", "status":"Approved"},
+    {"id":"#1701", "user":"Tsholofelo Ntsele",  "description":"Installation Assistance", "date":"17 Jul 2021", "status":"in progress"},
+    {"id":"#1700", "user":"Sipho Ndluli",  "description":"Data Top-Up", "date":"17 Jul 2021", "status":"Rejected"},
+    {"id":"#1699", "user":"Siphesihle Kekana",  "description":"Data Top-Up", "date":"17 Jul 2021", "status":"Approved"},
+    {"id":"#1698", "user":"Naledi Zuma",  "description":"Installation Assistance", "date":"16 Jul 2021", "status":"in progress"},
+    {"id":"#1697", "user":"Kelvin Phillips",  "description":"Data Top-Up", "date":"16 Jul 2021", "status":"Approved"},
+    {"id":"#1696", "user":"Kevin Samuels",  "description":"Data Top-Up", "date":"16 Jul 2021", "status":"Rejected"}
+]

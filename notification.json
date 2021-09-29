@@ -1,0 +1,12 @@
+[
+    {
+        "icon": "bx bx-error",
+        "content": "System due for update in 3 days"
+    },
+    {
+        "icon": "bx bx-package",
+        "content": "New assets have been registered"
+    }
+    
+    
+]
