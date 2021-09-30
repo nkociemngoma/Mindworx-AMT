@@ -1,13 +1,14 @@
+import React from 'react';
 import './App.css';
-import UserProfile from './UserProfile';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Map from './Map';
 
-function App() {
+export default function App() {
 	return (
-		<Router>
-			<UserProfile/>
-		</Router>
+		<div className='container '>
+			<div className='map-container'>
+				 <Map />
+				<h1>Map</h1>
+			</div>
+		</div>
 	);
 }
-
-export default App;
