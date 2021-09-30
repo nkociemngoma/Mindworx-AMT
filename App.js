@@ -1,11 +1,11 @@
 import './App.css';
-import FixedApp from './FixedApp';
+import UserProfile from './UserProfile';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
 	return (
 		<Router>
-			<FixedApp/>
+			<UserProfile/>
 		</Router>
 	);
 }
